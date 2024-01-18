@@ -1,0 +1,92 @@
+[
+    {
+        "id": "c766b71d-19c4-4b22-9f9a-99e5a7fc6d6a",
+        "title": "Exploring the World of Quantum Computing",
+        "description": "A deep dive into the principles and applications of quantum computing.",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...",
+        "imageUrl": "https://example.com/quantum-computing.jpg",
+        "category": "Quantum Computing",
+        "createdAt": "2024-01-12T10:30:00Z"
+    },
+    {
+        "id": "e8b3c94a-8a32-4a05-83bb-d3e22f8b18f6",
+        "title": "Artificial Intelligence: Past, Present, and Future",
+        "description": "Tracing the evolution of artificial intelligence and its impact on society.",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...",
+        "imageUrl": "https://example.com/ai-evolution.jpg",
+        "category": "Artificial Intelligence",
+        "createdAt": "2024-01-11T15:45:00Z"
+    },
+    {
+        "id": "2df1bf1e-84f3-4f33-a3c4-0d8b11f708c8",
+        "title": "Introduction to Machine Learning Algorithms",
+        "description": "A beginner-friendly guide to common machine learning algorithms and their applications.",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...",
+        "imageUrl": "https://example.com/ml-algorithms.jpg",
+        "category": "Machine Learning",
+        "createdAt": "2024-01-10T09:15:00Z"
+    },
+    {
+        "id": "a1e3b16d-babb-487c-a7e9-7146f05bc647",
+        "title": "The Impact of Big Data on Scientific Research",
+        "description": "Exploring how big data is revolutionizing scientific discovery and analysis.",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...",
+        "imageUrl": "https://example.com/big-data-science.jpg",
+        "category": "Big Data",
+        "createdAt": "2024-01-09T12:00:00Z"
+    },
+    {
+        "id": "39ac1c2a-57cf-48d1-98ed-0261e35db741",
+        "title": "Cybersecurity Best Practices for Developers",
+        "description": "Tips and strategies to enhance cybersecurity in software development.",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...",
+        "imageUrl": "https://example.com/cybersecurity-best-practices.jpg",
+        "category": "Cybersecurity",
+        "createdAt": "2024-01-08T14:20:00Z"
+    },
+    {
+        "id": "71e1183e-0a57-4a46-977a-27f62da5e3e5",
+        "title": "Web Development Trends in 2024",
+        "description": "An overview of the latest trends shaping the field of web development this year.",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...",
+        "imageUrl": "https://example.com/web-dev-trends.jpg",
+        "category": "Web Development",
+        "createdAt": "2024-01-07T11:30:00Z"
+    },
+    {
+        "id": "8c89b1a0-4a4a-46f2-af2e-4c2098da10c7",
+        "title": "The Evolution of Programming Languages",
+        "description": "A historical journey through the development of programming languages.",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...",
+        "imageUrl": "https://example.com/programming-languages-evolution.jpg",
+        "category": "Programming",
+        "createdAt": "2024-01-06T18:45:00Z"
+    },
+    {
+        "id": "5f3f3e4d-4a13-4b09-a62d-9a1db9484f1a",
+        "title": "Blockchain Technology: Beyond Cryptocurrencies",
+        "description": "Exploring the diverse applications of blockchain technology beyond cryptocurrencies.",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...",
+        "imageUrl": "https://example.com/blockchain-applications.jpg",
+        "category": "Blockchain",
+        "createdAt": "2024-01-05T10:00:00Z"
+    },
+    {
+        "id": "c1d14c8b-74ae-4323-bb2b-0a417a9e6473",
+        "title": "Ethical Considerations in Artificial Intelligence",
+        "description": "Addressing ethical challenges and considerations in the development and use of AI.",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...",
+        "imageUrl": "https://example.com/ai-ethics.jpg",
+        "category": "Ethics",
+        "createdAt": "2024-01-04T16:30:00Z"
+    },
+    {
+        "id": "a77911d3-3402-4c4c-8c77-78e3c63fb232",
+        "title": "The Future of Human-Computer Interaction",
+        "description": "Predictions and trends in the evolving landscape of human-computer interaction.",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...",
+        "imageUrl": "https://example.com/hci-future.jpg",
+        "category": "Human-Computer Interaction",
+        "createdAt": "2024-01-03T13:15:00Z"
+    }
+]

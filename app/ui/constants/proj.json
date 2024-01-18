@@ -1,0 +1,56 @@
+[
+    {
+        "id": "c4a0a7a1-3a98-4cb3-b07a-9b1a41a2c3e5",
+        "title": "Web Development Platform",
+        "description": "A platform for web development with collaborative features.",
+        "imageUrl": "https://example.com/project1.jpg",
+        "link": "https://example.com/project1",
+        "category": "Web Development",
+        "createdAt": "2024-01-12T08:30:00.000Z"
+    },
+    {
+        "id": "d821f4c2-815c-4e39-848b-6a5fcd6e8f28",
+        "title": "Mobile App for Social Networking",
+        "description": "An app connecting people through social networking.",
+        "imageUrl": "https://example.com/project2.jpg",
+        "link": "https://example.com/project2",
+        "category": "Mobile App",
+        "createdAt": "2024-01-12T09:15:00.000Z"
+    },
+    {
+        "id": "f6d3f745-8a79-4e5d-b66a-8f7152e0a6e3",
+        "title": "E-commerce Platform",
+        "description": "A platform for online buying and selling of products.",
+        "imageUrl": "https://example.com/project3.jpg",
+        "link": "https://example.com/project3",
+        "category": "E-commerce",
+        "createdAt": "2024-01-12T10:00:00.000Z"
+    },
+    {
+        "id": "ebdb3b95-7b1e-4a4a-b5c5-86e567dc0f1f",
+        "title": "Data Analytics Dashboard",
+        "description": "A dashboard for visualizing and analyzing data.",
+        "imageUrl": "https://example.com/project4.jpg",
+        "link": "https://example.com/project4",
+        "category": "Data Analytics",
+        "createdAt": "2024-01-12T11:45:00.000Z"
+    },
+    {
+        "id": "a5e25807-5374-46d4-89c2-5707296a6cc5",
+        "title": "Health and Fitness App",
+        "description": "An app for tracking health and fitness activities.",
+        "imageUrl": "https://example.com/project5.jpg",
+        "link": "https://example.com/project5",
+        "category": "Health and Fitness",
+        "createdAt": "2024-01-12T12:30:00.000Z"
+    },
+    {
+        "id": "3f8a942d-9e0c-4cb0-b04e-c88f380f14fb",
+        "title": "AI Chatbot Integration",
+        "description": "Integrating an AI chatbot into existing communication channels.",
+        "imageUrl": "https://example.com/project6.jpg",
+        "link": "https://example.com/project6",
+        "category": "Artificial Intelligence",
+        "createdAt": "2024-01-12T13:15:00.000Z"
+    }
+]

@@ -49,21 +49,3 @@ export async function POST(req) {
         );
     }
 }
-
-export async function GET() {
-    try {
-        const projects = await prisma.project.findMany({
-            orderBy: {
-                createdAt: "desc",
-            },
-        });
-        return NextResponse.json(projects);
-    } catch {
-        return NextResponse.json(
-            {
-                message: "Something went wrong",
-            },
-            { status: 500 }
-        );
-    }
-}

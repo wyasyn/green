@@ -64,21 +64,3 @@ export async function POST(req) {
         );
     }
 }
-
-export async function GET() {
-    try {
-        const users = await prisma.user.findMany({
-            orderBy: {
-                createdAt: "desc",
-            },
-        });
-        return NextResponse.json(users);
-    } catch {
-        return NextResponse.json(
-            {
-                message: "Something went wrong",
-            },
-            { status: 500 }
-        );
-    }
-}

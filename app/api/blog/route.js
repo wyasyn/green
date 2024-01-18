@@ -41,21 +41,3 @@ export async function POST(req) {
         );
     }
 }
-
-export async function GET() {
-    try {
-        const blogs = await prisma.blog.findMany({
-            orderBy: {
-                createdAt: "desc",
-            },
-        });
-        return NextResponse.json(blogs);
-    } catch {
-        return NextResponse.json(
-            {
-                message: "Something went wrong",
-            },
-            { status: 500 }
-        );
-    }
-}

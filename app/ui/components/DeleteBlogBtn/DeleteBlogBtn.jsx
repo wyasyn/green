@@ -11,7 +11,7 @@ export default function DeleteBlogBtn({ blog_id }) {
     const router = useRouter();
     const deleteBlog = async () => {
         const res = await axios.delete(
-            `http://localhost:3000/api/blog/${blog_id}`
+            `https://www.ywalum.com/api/blog/${blog_id}`
         );
         if (res.status == 201) {
             toast.success(res.data.message);

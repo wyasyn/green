@@ -11,7 +11,7 @@ export default function DeleteUserBtn({ user_id }) {
     const router = useRouter();
     const deleteUser = async () => {
         const res = await axios.delete(
-            `http://localhost:3000/api/user/${user_id}`
+            `https://www.ywalum.com/api/user/${user_id}`
         );
         if (res.status == 201) {
             toast.success(res.data.message);

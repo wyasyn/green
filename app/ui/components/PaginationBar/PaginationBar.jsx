@@ -1,8 +1,8 @@
 import Link from "next/link";
 
 export default function PaginationBar({ currentPage, totalPages, level }) {
-    const maxPage = Math.min(totalPages, Math.max(currentPage + 2, 5));
-    const minPage = Math.max(1, Math.min(currentPage - 2, maxPage - 4));
+    const maxPage = Math.min(totalPages, Math.max(currentPage + 4, 10));
+    const minPage = Math.max(1, Math.min(currentPage - 4, maxPage - 9));
 
     const numberedPageItems = [];
     for (let page = minPage; page <= maxPage; page++) {

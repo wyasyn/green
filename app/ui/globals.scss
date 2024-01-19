@@ -300,10 +300,6 @@ table {
     }
 }
 
-.pro {
-    background-color: rgba(0, 0, 0, 0.25);
-}
-
 .testimonies {
     padding-top: 5em;
     width: 100%;
@@ -410,4 +406,21 @@ table {
 
 .clip {
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+}
+
+.project-card {
+    .num {
+        visibility: hidden;
+    }
+    .pro {
+        background-color: rgba(0, 0, 0, 0.25);
+    }
+    &:hover {
+        .pro {
+            backdrop-filter: blur(4px);
+        }
+        .num {
+            visibility: visible;
+        }
+    }
 }

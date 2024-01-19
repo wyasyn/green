@@ -1,11 +1,12 @@
-export const revalidate = 0;
 import Link from "next/link";
 import React from "react";
 import { getProjects } from "../../getData";
 import DynamicImage from "../DynamicImage/DynamicImage";
 import { IoLogoGithub } from "react-icons/io5";
+import { unstable_noStore } from "next/cache";
 
 export default async function Projects() {
+    unstable_noStore();
     const selected = await getProjects();
     const selectedProjects = selected.slice(0, 3);
     return (
@@ -26,18 +27,15 @@ export default async function Projects() {
                                 return (
                                     <article
                                         key={item.id}
-                                        className=" relative aspect-[3/2] lg:aspect-[2/3] overflow-clip rounded-lg"
+                                        className="project-card relative aspect-[3/2] lg:aspect-[16/9] overflow-clip rounded-lg"
                                     >
                                         <div className=" absolute inset-0 ">
                                             <DynamicImage src={item.imageUrl} />
                                         </div>
-                                        <div className="absolute top-0 right-4 z-20 text-7xl font-bold recoleta">
+                                        <div className=" transition-all absolute top-0 right-4 z-20 text-7xl font-bold recoleta num">
                                             0{idx + 1}
                                         </div>
-                                        <div className=" pro absolute z-10 inset-0 flex flex-col justify-end p-4 hover:backdrop-blur-sm transition-all">
-                                            <small className=" bg-primary w-fit py-1 px-4 rounded-md text-sm">
-                                                {item.category}
-                                            </small>
+                                        <div className=" pro absolute z-10 inset-0 flex flex-col justify-end p-4 transition-all">
                                             <h3 className=" text-lg font-semibold recoleta my-3 ">
                                                 {item.title}
                                             </h3>

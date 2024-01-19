@@ -10,9 +10,7 @@ export default function DeleteProjectBtn({ project_id }) {
     const [de, setDe] = useState(false);
     const router = useRouter();
     const deleteProject = async () => {
-        const res = await axios.delete(
-            `https://www.ywalum.com/api/project/${project_id}`
-        );
+        const res = await axios.delete(`/api/project/${project_id}`);
         if (res.status == 201) {
             toast.success(res.data.message);
             router.refresh();

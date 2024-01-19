@@ -3,7 +3,7 @@
 import prisma from "@/lib/prisma";
 
 export async function getProjects() {
-    const projects = await prisma.project.findMany({
+    let projects = await prisma.project.findMany({
         orderBy: {
             createdAt: "desc",
         },
@@ -11,7 +11,7 @@ export async function getProjects() {
     return projects;
 }
 export async function getBlogs() {
-    const blogs = await prisma.blog.findMany({
+    let blogs = await prisma.blog.findMany({
         orderBy: {
             createdAt: "desc",
         },
@@ -19,7 +19,7 @@ export async function getBlogs() {
     return blogs;
 }
 export async function getUsers() {
-    const users = await prisma.user.findMany({
+    let users = await prisma.user.findMany({
         orderBy: {
             createdAt: "desc",
         },

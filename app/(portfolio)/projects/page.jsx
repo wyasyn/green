@@ -12,7 +12,7 @@ export const metadata = {
 
 export default async function page({ searchParams: { page = "1" } }) {
     const currentPage = parseInt(page);
-    const pageSize = 8;
+    const pageSize = 6;
     const heroItemCount = 1;
     const totalItemsCount = await prisma.project.count();
     const totalPages = Math.ceil((totalItemsCount - heroItemCount) / pageSize);
@@ -75,20 +75,20 @@ export default async function page({ searchParams: { page = "1" } }) {
                             </div>
                         </div>
                     )}
-                    <div className="wrapper grid gap-[3rem] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 my-[7rem]">
+                    <div className="wrapper grid gap-[3rem] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-[7rem]">
                         {res.map((item, idx) => {
                             return (
                                 <article
                                     key={item.id}
-                                    className=" relative aspect-[3/2] lg:aspect-[2/3] overflow-clip rounded-lg"
+                                    className="project-card relative aspect-[3/2] lg:aspect-[16/9] overflow-clip rounded-lg"
                                 >
                                     <div className=" absolute inset-0 ">
                                         <DynamicImage src={item.imageUrl} />
                                     </div>
-                                    <div className="absolute top-0 right-4 z-20 text-7xl font-bold recoleta">
+                                    <div className=" transition-all absolute top-0 right-4 z-20 text-7xl font-bold recoleta num">
                                         {idx < 8 ? `0${idx + 2}` : `${idx + 2}`}
                                     </div>
-                                    <div className=" pro absolute z-10 inset-0 flex flex-col justify-end p-4 hover:backdrop-blur-sm transition-all">
+                                    <div className=" pro absolute z-10 inset-0 flex flex-col justify-end p-4 transition-all">
                                         <h3 className=" text-lg font-semibold recoleta my-3 ">
                                             {item.title}
                                         </h3>

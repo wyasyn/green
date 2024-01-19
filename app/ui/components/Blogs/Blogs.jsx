@@ -1,9 +1,10 @@
-export const revalidate = 0;
 import Link from "next/link";
 import { getBlogs } from "../../getData";
 import DynamicImage from "../DynamicImage/DynamicImage";
+import { unstable_noStore } from "next/cache";
 
 export default async function Blogs() {
+    unstable_noStore();
     const blogs = await getBlogs();
     const featured = blogs.slice(0, 3);
     return (

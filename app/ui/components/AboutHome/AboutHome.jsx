@@ -8,7 +8,7 @@ export default function AboutHome() {
         <section>
             <div className="wrapper flex flex-col gap-[3rem] lg:gap-[5rem] lg:flex-row py-[5rem] lg:py-[10rem]">
                 <div>
-                    <div className=" bg-primary clip rounded-2xl ">
+                    <div className=" bg-primary clip rounded-2xl max-w-[400px]">
                         <Image
                             src={images.black}
                             alt="black me"

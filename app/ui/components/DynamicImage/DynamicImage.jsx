@@ -14,6 +14,7 @@ export default async function DynamicImage({ src }) {
             width={1920}
             height={1280}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            placeholder="blur"
             blurDataURL={base64}
         />
     );

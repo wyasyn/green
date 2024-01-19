@@ -13,6 +13,7 @@ export default async function Priority({ src }) {
             width={1920}
             height={1280}
             priority
+            placeholder="blur"
             blurDataURL={base64}
         />
     );

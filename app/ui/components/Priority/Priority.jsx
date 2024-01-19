@@ -1,8 +1,7 @@
 import Image from "next/image";
-import axios from "axios";
 import { getPlaiceholder } from "plaiceholder";
 export default async function Priority({ src }) {
-    const buffer = await axios(src).then(async (res) => {
+    const buffer = await fetch(src).then(async (res) => {
         return Buffer.from(await res.arrayBuffer());
     });
     const { base64 } = await getPlaiceholder(buffer);

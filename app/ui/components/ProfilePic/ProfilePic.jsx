@@ -10,7 +10,6 @@ export default function ProfilePic() {
                 width={24}
                 height={24}
                 alt="profile pic"
-                placeholder="blur"
             />
         </div>
     );

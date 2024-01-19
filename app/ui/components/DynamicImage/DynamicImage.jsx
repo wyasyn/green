@@ -1,9 +1,8 @@
-import axios from "axios";
 import Image from "next/image";
 import { getPlaiceholder } from "plaiceholder";
 
 export default async function DynamicImage({ src }) {
-    const buffer = await axios(src).then(async (res) => {
+    const buffer = await fetch(src).then(async (res) => {
         return Buffer.from(await res.arrayBuffer());
     });
     const { base64 } = await getPlaiceholder(buffer);

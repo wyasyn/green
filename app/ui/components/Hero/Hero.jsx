@@ -58,6 +58,7 @@ export default function Hero() {
                             height={600}
                             alt="hero pic"
                             priority
+                            placeholder="blur"
                             className=" w-full h-full object-contain"
                         />
                     </div>

@@ -15,6 +15,7 @@ export default function AboutHome() {
                             width={600}
                             height={800}
                             priority
+                            placeholder="blur"
                         />
                     </div>
                 </div>

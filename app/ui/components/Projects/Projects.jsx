@@ -1,4 +1,3 @@
-export const revalidate = 0;
 import Link from "next/link";
 import React from "react";
 import { getProjects } from "../../getData";

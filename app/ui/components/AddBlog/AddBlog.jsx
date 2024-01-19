@@ -36,6 +36,7 @@ export default function AddBlog() {
                         description: "",
                     });
                     router.refresh();
+                    router.refresh("/");
                     toast.success(res.data.message);
                     setOpen(false);
                 })

@@ -38,7 +38,6 @@ export default function AddProject() {
                         description: "",
                     });
                     router.refresh();
-                    router.refresh("/");
                     toast.success(res.data.message);
                     setOpen(false);
                 })

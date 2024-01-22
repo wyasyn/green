@@ -50,4 +50,7 @@
         background-color: #eee;
         color: #0f1035;
     }
+    @media screen and (max-width: 500px) {
+        bottom: 5rem;
+    }
 }

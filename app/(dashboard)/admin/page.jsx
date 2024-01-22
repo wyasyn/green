@@ -46,12 +46,14 @@ export default async function page() {
             <div className="my-[3rem] grid gap-[2rem] sm:grid-cols-2 md:grid-cols-4">
                 {stats.map((item, idx) => (
                     <article
-                        className="bg-card text-black border-m p-5 shadow-md "
+                        className="bg-card border-m p-5 custom-shadow "
                         key={idx}
                     >
-                        <small>{item.date}</small>
-                        <h3 className="my-3 font-semibold">{item.name}</h3>
-                        <p className="text-2xl ">{item.content}</p>
+                        <small className=" text-icon ">{item.date}</small>
+                        <h3 className="my-3 font-semibold text-grey">
+                            {item.name}
+                        </h3>
+                        <p className="text-2xl text-grey">{item.content}</p>
                     </article>
                 ))}
             </div>
@@ -62,15 +64,15 @@ export default async function page() {
                         messages.map((item) => (
                             <article
                                 key={item.id}
-                                className="bg-card text-base p-[1em] border-m"
+                                className="bg-card p-[1em] border-m custom-shadow"
                             >
-                                <small>
+                                <small className=" text-icon ">
                                     {item.createdAt.toLocaleDateString()}
                                 </small>
-                                <h3 className="font-bold capitalize">
+                                <h3 className="font-bold capitalize text-grey">
                                     {item.sender}
                                 </h3>
-                                <p className="my-4">{item.content}</p>
+                                <p className="my-4 text-grey">{item.content}</p>
                                 <Link
                                     href={`mailto:${item.contact}`}
                                     className="font-thin hover:font-semibold transition-all duration-300 ease-in-out "

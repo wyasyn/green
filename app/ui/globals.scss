@@ -28,7 +28,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #f7ab0a;
+    background-color: #4c4f5a;
     border: 2px solid #0a1f26;
     border-radius: 100vw;
 }
@@ -423,4 +423,8 @@ table {
             visibility: visible;
         }
     }
+}
+
+.custom-shadow {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 }

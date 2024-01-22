@@ -10,15 +10,15 @@ export default function AboutServices() {
                     {ServicesData.map((item) => (
                         <article
                             key={item.title}
-                            className=" flex flex-col items-center text-center rounded-lg bg-card text-base p-4 "
+                            className=" flex flex-col items-center text-center rounded-lg bg-card p-4 custom-shadow "
                         >
-                            <div className=" text-3xl text-primary">
+                            <div className=" text-3xl text-icon">
                                 {item.icon}
                             </div>
-                            <h3 className=" my-2 font-semibold recoleta ">
+                            <h3 className=" my-2 font-semibold recoleta text-grey">
                                 {item.title}
                             </h3>
-                            <p className=" text-sm max-w-[40ch] ">
+                            <p className=" text-sm max-w-[40ch] text-grey">
                                 {item.describe}
                             </p>
                         </article>

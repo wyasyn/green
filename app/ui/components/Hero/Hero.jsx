@@ -19,7 +19,7 @@ export default function Hero() {
                     <div className="text-4xl font-bold text-slate-400 mb-8">
                         I build things for the web.
                     </div>
-                    <p className=" max-w-[50ch] ">
+                    <p className=" max-w-[50ch] text-icon">
                         I specialize in building (and occasioanlly designing)
                         exceptional digital experiences. I'm focused on building
                         accessible, human-centered products.
@@ -68,13 +68,17 @@ export default function Hero() {
                     {ServicesData.slice(0, 3).map((item) => (
                         <article
                             key={item.title}
-                            className=" serv p-4 bg-card text-base shadow-md flex flex-col items-center text-center gap-2 hover:bg-main transition-all"
+                            className=" serv p-4 bg-card custom-shadow flex flex-col items-center text-center gap-2 hover:bg-main transition-all"
                         >
-                            <div className=" text-2xl text-primary">
+                            <div className=" text-2xl text-icon">
                                 {item.icon}
                             </div>
-                            <h3 className=" font-semibold ">{item.title}</h3>
-                            <p className=" text-sm ">{item.describe}</p>
+                            <h3 className=" font-semibold text-grey">
+                                {item.title}
+                            </h3>
+                            <p className=" text-sm text-grey">
+                                {item.describe}
+                            </p>
                         </article>
                     ))}
                 </div>

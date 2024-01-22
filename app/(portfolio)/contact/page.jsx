@@ -15,7 +15,7 @@ export default function page() {
                         <ContactForm />
                     </div>
                     <div className="flex-1 md:pt-12 relative">
-                        <small className="text-main italic">Contact Me</small>
+                        <small className="text-icon italic">Contact Me</small>
                         <h1 className="text-2xl font-bold lg:text-3xl">
                             Say Hi 👋!
                         </h1>
@@ -30,7 +30,7 @@ export default function page() {
                                     key={item.name}
                                     href={item.url}
                                 >
-                                    <span className="text-main text-xl">
+                                    <span className="text-icon text-xl">
                                         {item.icon}
                                     </span>{" "}
                                     {item.name}

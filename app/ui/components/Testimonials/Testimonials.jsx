@@ -50,11 +50,15 @@ export default function Testimonials() {
                                     />
                                 </div>
                                 <div className="info">
-                                    <h4 className=" text-sm ">{data.title}</h4>
+                                    <h4 className=" text-sm text-grey">
+                                        {data.title}
+                                    </h4>
                                     <h3 className=" text-main recoleta text-lg ">
                                         {data.name}
                                     </h3>
-                                    <p className="port-text">{data.comment}</p>
+                                    <p className="port-text text-icon">
+                                        {data.comment}
+                                    </p>
                                 </div>
                             </article>
                         ))}

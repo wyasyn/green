@@ -1,4 +1,5 @@
 import Blogs from "../ui/components/Blogs/Blogs";
+import Chatbot from "../ui/components/Chatbot/Chatbot";
 import Hero from "../ui/components/Hero/Hero";
 import HomeAbout from "../ui/components/HomeAbout/HomeAbout";
 import Projects from "../ui/components/Projects/Projects";
@@ -12,6 +13,7 @@ export default async function Home() {
             <Projects />
             <Testimonials />
             <Blogs />
+            <Chatbot />
         </>
     );
 }

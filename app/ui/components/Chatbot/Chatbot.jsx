@@ -46,7 +46,7 @@ const Chatbot = () => {
             addMessage("user", inputText);
 
             const response = await axios.post(
-                "http://wyasyn.pythonanywhere.com/predict",
+                "https://wyasyn.pythonanywhere.com/predict",
                 {
                     message: inputText,
                 },

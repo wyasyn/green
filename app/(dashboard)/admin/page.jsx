@@ -46,7 +46,7 @@ export default async function page() {
             <div className="my-[3rem] grid gap-[2rem] sm:grid-cols-2 md:grid-cols-4">
                 {stats.map((item, idx) => (
                     <article
-                        className="bg-card border-m p-5 custom-shadow "
+                        className="bg-card border-m p-5 custom-shadow hover:translate-y-3 transition-all "
                         key={idx}
                     >
                         <small className=" text-icon ">{item.date}</small>
@@ -64,7 +64,7 @@ export default async function page() {
                         messages.map((item) => (
                             <article
                                 key={item.id}
-                                className="bg-card p-[1em] border-m custom-shadow"
+                                className="bg-card p-[1em] border-m custom-shadow hover:translate-y-3 transition-all"
                             >
                                 <small className=" text-icon ">
                                     {item.createdAt.toLocaleDateString()}

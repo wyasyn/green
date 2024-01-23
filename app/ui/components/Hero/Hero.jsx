@@ -68,17 +68,13 @@ export default function Hero() {
                     {ServicesData.slice(0, 3).map((item) => (
                         <article
                             key={item.title}
-                            className=" serv p-4 bg-card custom-shadow flex flex-col items-center text-center gap-2 hover:bg-main transition-all"
+                            className=" serv p-4 bg-card custom-shadow flex flex-col text-grey items-center text-center gap-2 hover:bg-grey hover:text-card transition-all"
                         >
                             <div className=" text-2xl text-icon">
                                 {item.icon}
                             </div>
-                            <h3 className=" font-semibold text-grey">
-                                {item.title}
-                            </h3>
-                            <p className=" text-sm text-grey">
-                                {item.describe}
-                            </p>
+                            <h3 className=" font-semibold">{item.title}</h3>
+                            <p className=" text-sm">{item.describe}</p>
                         </article>
                     ))}
                 </div>

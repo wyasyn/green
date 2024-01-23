@@ -27,7 +27,7 @@ const Chatbot = () => {
     };
 
     const handleIntroGreeting = () => {
-        const greeting = "Hello! I'm Atom. How can I assist you today?";
+        const greeting = "Hello! I'm Rauf. How can I assist you today?";
         addMessage("bot", greeting);
         setInitialGreetingDone(true);
     };
@@ -76,7 +76,7 @@ const Chatbot = () => {
                             {" "}
                             <TbRobot />{" "}
                         </div>
-                        <p>Atom</p>
+                        <p>RAUF</p>
                     </header>
                     <div className="body flex flex-col gap-5 text-sm">
                         {messages.map((message) => (

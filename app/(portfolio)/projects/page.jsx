@@ -4,7 +4,6 @@ import Priority from "@/app/ui/components/Priority/Priority";
 import prisma from "@/lib/prisma";
 import Link from "next/link";
 import React from "react";
-import { IoLogoGithub } from "react-icons/io5";
 
 export const metadata = {
     title: "My Projects - Yasin Walum - Web developer",
@@ -78,9 +77,10 @@ export default async function page({ searchParams: { page = "1" } }) {
                     <div className="wrapper grid gap-[3rem] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-[7rem]">
                         {res.map((item, idx) => {
                             return (
-                                <article
+                                <Link
+                                    href={`projects/${item.id}`}
                                     key={item.id}
-                                    className="project-card relative aspect-[3/2] lg:aspect-[16/9] overflow-clip rounded-lg"
+                                    className="project-card relative aspect-[3/2] lg:aspect-[16/9] overflow-clip rounded-lg w-full"
                                 >
                                     <div className=" absolute inset-0 ">
                                         <DynamicImage src={item.imageUrl} />
@@ -92,22 +92,8 @@ export default async function page({ searchParams: { page = "1" } }) {
                                         <h3 className=" text-lg font-semibold recoleta my-3 ">
                                             {item.title}
                                         </h3>
-                                        <div className=" flex items-center gap-4">
-                                            <Link
-                                                href={item.github}
-                                                className=" text-2xl "
-                                            >
-                                                <IoLogoGithub />
-                                            </Link>
-                                            <Link
-                                                className=" py-1 px-4 bg-slate-400 rounded-md block w-fit hover:bg-main transition-all text-xs "
-                                                href={`projects/${item.id}`}
-                                            >
-                                                Details
-                                            </Link>
-                                        </div>
                                     </div>
-                                </article>
+                                </Link>
                             );
                         })}
                     </div>

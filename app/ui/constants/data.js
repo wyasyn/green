@@ -1,9 +1,15 @@
-import { FaEnvelope, FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { MdComputer, MdDashboard, MdGraphicEq, MdMouse } from "react-icons/md";
 import { BsDatabase } from "react-icons/bs";
+import { FiLinkedin, FiGithub } from "react-icons/fi";
+import { IoMailOutline, IoHome } from "react-icons/io5";
 import { images } from "../images";
-import { IoHome } from "react-icons/io5";
-import { FaBlog, FaBriefcase, FaPhoneAlt, FaUser } from "react-icons/fa";
+import {
+    FaBlog,
+    FaBriefcase,
+    FaPhoneAlt,
+    FaUser,
+    FaWhatsapp,
+} from "react-icons/fa";
 
 const myEmail = process.env.MY_EMAIL;
 const myPhone = process.env.MY_PHONE;
@@ -39,7 +45,7 @@ export const items = [
 export const socialsdata = [
     {
         name: "github",
-        icon: <FaGithub />,
+        icon: <FiGithub />,
         url: "https://github.com/wyasyn",
     },
     {
@@ -49,12 +55,12 @@ export const socialsdata = [
     },
     {
         name: "linkedin",
-        icon: <FaLinkedinIn />,
+        icon: <FiLinkedin />,
         url: "https://www.linkedin.com/in/yasin-walum-01b18295/",
     },
     {
         name: "Email",
-        icon: <FaEnvelope />,
+        icon: <IoMailOutline />,
         url: `mailto:${myEmail}`,
     },
     {

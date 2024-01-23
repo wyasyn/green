@@ -2,7 +2,6 @@ import Link from "next/link";
 import React from "react";
 import { getProjects } from "../../getData";
 import DynamicImage from "../DynamicImage/DynamicImage";
-import { IoLogoGithub } from "react-icons/io5";
 import { unstable_noStore } from "next/cache";
 
 export default async function Projects() {
@@ -25,9 +24,10 @@ export default async function Projects() {
                         <>
                             {selectedProjects.map((item, idx) => {
                                 return (
-                                    <article
+                                    <Link
+                                        href={`projects/${item.id}`}
                                         key={item.id}
-                                        className="project-card relative aspect-[3/2] lg:aspect-[16/9] overflow-clip rounded-lg"
+                                        className="project-card relative aspect-[3/2] lg:aspect-[16/9] overflow-clip rounded-lg w-full"
                                     >
                                         <div className=" absolute inset-0 ">
                                             <DynamicImage src={item.imageUrl} />
@@ -39,22 +39,8 @@ export default async function Projects() {
                                             <h3 className=" text-lg font-semibold recoleta my-3 ">
                                                 {item.title}
                                             </h3>
-                                            <div className=" flex items-center gap-4">
-                                                <Link
-                                                    href={item.github}
-                                                    className=" text-2xl "
-                                                >
-                                                    <IoLogoGithub />
-                                                </Link>
-                                                <Link
-                                                    className=" py-1 px-4 bg-slate-400 rounded-md block w-fit hover:bg-main transition-all text-xs "
-                                                    href={`projects/${item.id}`}
-                                                >
-                                                    Details
-                                                </Link>
-                                            </div>
                                         </div>
-                                    </article>
+                                    </Link>
                                 );
                             })}
                         </>

@@ -25,7 +25,7 @@ export default async function page({ params: { id } }) {
     const project = await getProject(id);
     const isNew =
         Date.now() - new Date(project.createdAt).getTime() <
-        1000 * 60 * 60 * 24;
+        1000 * 60 * 60 * 24 * 7;
     return (
         <Suspense fallback={<Skeleton />}>
             <div className="wrapper flex flex-col lg:flex-row gap-8 lg:gap-[5rem] lg:mt-[7rem] mb-[10rem]">

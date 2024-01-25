@@ -22,7 +22,8 @@ export async function generateMetadata({ params: { id } }) {
 export default async function page({ params: { id } }) {
     const blog = await getBlog(id);
     const isNew =
-        Date.now() - new Date(blog.createdAt).getTime() < 1000 * 60 * 60 * 24;
+        Date.now() - new Date(blog.createdAt).getTime() <
+        1000 * 60 * 60 * 24 * 7;
     return (
         <Suspense fallback={<Skeleton />}>
             <div className="wrapper flex flex-col lg:flex-row gap-8 lg:gap-[5rem] lg:mt-[7rem] mb-[10rem]">

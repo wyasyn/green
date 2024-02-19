@@ -14,7 +14,10 @@ export default function Hero() {
                         <span className=" text-xl ">👋</span>, my name is
                     </small>
                     <h1 className=" text-5xl font-bold text-white mt-4 lg:text-7xl recoleta">
-                        Yasin <span className=" text-main ">W</span>alum.
+                        Yasin{" "}
+                        <span className=" text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 ">
+                            Walum
+                        </span>
                     </h1>
                     <div className="text-4xl font-bold text-slate-400 mb-8">
                         I build things for the web.

@@ -15,7 +15,7 @@ export default function Hero() {
                     </small>
                     <h1 className=" text-5xl font-bold text-white mt-4 lg:text-7xl recoleta">
                         Yasin{" "}
-                        <span className=" text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 ">
+                        <span className=" text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ">
                             Walum
                         </span>
                     </h1>

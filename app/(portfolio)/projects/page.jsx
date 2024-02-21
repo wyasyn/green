@@ -99,6 +99,7 @@ export default async function page({ searchParams: { page = "1" } }) {
                     </div>
                     {totalPages > 1 && (
                         <PaginationBar
+                            level="projects"
                             currentPage={currentPage}
                             totalPages={totalPages}
                         />

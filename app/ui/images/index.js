@@ -8,6 +8,7 @@ import prof from "./icon.png";
 import hero from "./2145868.svg";
 import yellow from "./yellow.png";
 import black from "./black.png";
+import profile from "./profile.jpg";
 export const images = {
     black,
     yellow,
@@ -19,4 +20,5 @@ export const images = {
     profile04,
     profile05,
     prof,
+    profile,
 };

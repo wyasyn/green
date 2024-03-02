@@ -1,12 +1,11 @@
 import Image from "next/image";
-import { images } from "../../images";
 
 export default function ProfilePic() {
     return (
-        <div className="icon w-6 h-6 rounded-full overflow-clip bg-main pt-1">
+        <div className="w-10 h-10 rounded-full overflow-clip grid place-items-center">
             <Image
-                className="w-full h-full object-cover object-top "
-                src={images.prof}
+                className="w-full h-full object-cover object-center "
+                src="/images/logo-gradient.svg"
                 width={24}
                 height={24}
                 alt="profile pic"

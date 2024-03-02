@@ -7,12 +7,14 @@ export default function DashItem({ url, icon, name }) {
     const isActive = pathname === url;
     return (
         <Link
-            className={`lg:text-lg ${
-                isActive ? "item active" : "item text-slate-300"
+            className={`lg:text-lg group item ${
+                isActive ? "active" : "text-slate-300"
             }`}
-            title={name}
             href={url}
         >
+            <small className=" text-sm absolute top-[-1.5rem] lg:top-[50%] bg-logod text-slate-100 px-3 rounded-2xl left-[50%] translate-x-[-50%] hidden group-hover:block lg:left-auto lg:translate-x-0 lg:translate-y-[-50%] lg:right-[-6rem] ">
+                {name}
+            </small>
             {icon}
         </Link>
     );

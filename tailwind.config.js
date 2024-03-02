@@ -19,6 +19,8 @@ module.exports = {
                 cardlight: "#e0ddda",
                 trans: "#0a1f26a1",
                 grey: "#c5c8d4",
+                logon: "#ed1858",
+                logod: "#f48047",
             },
         },
     },

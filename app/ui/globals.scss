@@ -3,6 +3,12 @@
 @tailwind utilities;
 @import "./Recoleta/stylesheet.css";
 
+@layer utilities {
+    .heroradius {
+        border-radius: 2rem 0 2rem 2rem;
+    }
+}
+
 body {
     font-family:
         system-ui,

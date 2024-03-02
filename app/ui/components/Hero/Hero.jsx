@@ -7,7 +7,7 @@ import { images } from "../../images";
 export default function Hero() {
     return (
         <div>
-            <div className="wrapper my-[3rem] lg:mt-[12rem] flex flex-col-reverse items-center text-center lg:items-start lg:text-left lg:flex-row gap-[3rem] lg:gap-[7rem]">
+            <div className="wrapper my-[3rem] lg:mt-[12rem] lg:mb-[7rem] flex flex-col-reverse items-center text-center lg:items-start lg:text-left lg:flex-row gap-[3rem] lg:gap-[7rem]">
                 <div>
                     <small className="text-sm ">
                         {" "}
@@ -15,7 +15,7 @@ export default function Hero() {
                     </small>
                     <h1 className=" text-5xl font-bold text-white mt-4 lg:text-7xl recoleta">
                         Yasin{" "}
-                        <span className=" text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ">
+                        <span className=" text-transparent bg-clip-text bg-gradient-to-r from-logon to-logod ">
                             Walum
                         </span>
                     </h1>
@@ -56,12 +56,12 @@ export default function Hero() {
                 <div className=" flex items-center justify-center">
                     <div>
                         <Image
-                            src={images.yellow}
+                            src={images.profile}
                             width={300}
-                            height={600}
+                            height={300}
                             alt="hero pic"
                             priority
-                            className=" w-full h-full object-contain"
+                            className="rounded-full lg:heroradius w-full h-full object-contain"
                         />
                     </div>
                 </div>

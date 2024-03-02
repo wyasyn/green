@@ -15,7 +15,7 @@ export default function AboutSkills() {
                             <div className=" bg-slate-400 w-full h-2 rounded-lg">
                                 <div
                                     style={{ width: `${item.percent}%` }}
-                                    className=" bg-green-700 h-2 rounded-lg"
+                                    className=" bg-logod h-2 rounded-lg"
                                 />
                             </div>
                         </article>

@@ -53,7 +53,7 @@ export default function Testimonials() {
                                     <h4 className=" text-sm text-grey">
                                         {data.title}
                                     </h4>
-                                    <h3 className=" text-main recoleta text-lg ">
+                                    <h3 className=" text-logod recoleta text-lg ">
                                         {data.name}
                                     </h3>
                                     <p className="port-text text-icon">

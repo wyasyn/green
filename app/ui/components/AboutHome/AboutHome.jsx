@@ -23,8 +23,8 @@ export default function AboutHome() {
                     <small className=" text-lg text-primary font-semibold ">
                         {aboutInfor.intro}
                     </small>
-                    <h1 className=" mt-2 mb-4 recoleta text-3xl font-semibold">
-                        Yasin <span className=" text-main ">W</span>alum
+                    <h1 className=" mt-2 mb-4 recoleta text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-logon to-logod">
+                        Yasin Walum
                     </h1>
                     <p className=" max-w-[60ch] ">{aboutInfor.describe}</p>
                     <div className=" mt-[5rem] flex items-center gap-[3rem] lg:gap-[5rem] ">

@@ -35,7 +35,7 @@ export const metadata = {
         siteName: "Yasin Walum | Web Developer Portfolio",
         images: [
             {
-                url: "/images/blogMe.jpg",
+                url: "/images/profile.jpg",
                 width: 1080,
                 height: 760,
                 alt: "Yasin Walum",
